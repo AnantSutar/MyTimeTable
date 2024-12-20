@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: lightblue;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TableView fx:id="tableenrolledcourses" layoutX="29.0" layoutY="87.0" prefHeight="200.0" prefWidth="378.0">
+        <columns>
+          <TableColumn fx:id="coursecolumn" prefWidth="107.2000732421875" text="CourseName" />
+          <TableColumn fx:id="modecolumn" minWidth="0.0" prefWidth="82.39996337890625" text="Mode" />
+            <TableColumn fx:id="daycolumn" prefWidth="79.99993896484375" text="Day" />
+            <TableColumn fx:id="timecolumn" prefWidth="108.79998779296875" text="Timing" />
+        </columns>
+      </TableView>
+      <MenuBar fx:id="viewmenu" layoutY="1.0">
+        <menus>
+            <Menu mnemonicParsing="false" text="View">
+              <items>
+                <MenuItem fx:id="menulistview" mnemonicParsing="false" text="List View" />
+                  <MenuItem fx:id="menuttview" mnemonicParsing="false" text="Timetable View" />
+              </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+      <Button fx:id="closebutton" layoutX="452.0" layoutY="306.0" mnemonicParsing="false" text="Close" />
+      <Label fx:id="enrollcoursessize" layoutX="130.0" layoutY="33.0" prefHeight="32.0" prefWidth="218.0" />
+   </children>
+</Pane>

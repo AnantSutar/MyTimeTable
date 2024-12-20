@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane fx:id="CourseList" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="427.0" prefWidth="642.0" style="-fx-background-color: lightblue;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TableView fx:id="table" layoutX="14.0" layoutY="54.0" prefHeight="309.0" prefWidth="532.0">
+        <columns>
+          <TableColumn fx:id="cname" prefWidth="75.0" text="CourseName" />
+          <TableColumn fx:id="cap" prefWidth="75.0" text="Capacity" />
+            <TableColumn fx:id="year" prefWidth="75.0" text="Year" />
+            <TableColumn fx:id="dm" prefWidth="75.0" text="Delivery Mode" />
+            <TableColumn fx:id="day" prefWidth="75.0" text="Day" />
+            <TableColumn fx:id="time" prefWidth="75.0" text="Time" />
+            <TableColumn fx:id="dur" prefWidth="75.0" text="Duration" />
+        </columns>
+      </TableView>
+      <Label layoutX="35.0" layoutY="21.0" text="Search Course" />
+      <TextField fx:id="searchcourse" layoutX="129.0" layoutY="17.0" prefHeight="25.0" prefWidth="249.0" promptText="Keywords.." />
+      <Button fx:id="closebutton" layoutX="539.0" layoutY="378.0" mnemonicParsing="false" text="Close" />
+   </children>
+</Pane>
